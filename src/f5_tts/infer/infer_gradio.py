@@ -68,9 +68,9 @@ def load_e2tts(ckpt_path=str(cached_path("hf://SWivid/E2-TTS/E2TTS_Base/model_12
 
 def load_custom(ckpt_path: str, vocab_path="", model_cfg=None):
     ckpt_path, vocab_path = ckpt_path.strip(), vocab_path.strip()
-    if ckpt_path.startswith("hf://"):
+    if ckpt_path.startswith("hf://C:\Users\User\Documents\voice ger/model_420000.safetenors"):
         ckpt_path = str(cached_path(ckpt_path))
-    if vocab_path.startswith("hf://"):
+    if vocab_path.startswith("hf://C:\Users\User\Documents\vocab.txt"):
         vocab_path = str(cached_path(vocab_path))
     if model_cfg is None:
         model_cfg = dict(dim=1024, depth=22, heads=16, ff_mult=2, text_dim=512, conv_layers=4)
